@@ -19,9 +19,9 @@ public class ConnectionFactory {
     private static ConnectionFactory instance = new ConnectionFactory();
     
     //constante e static - para usar sempre a mesma referência
-    public static final String URL = "jdbc:mysql://teste-bd-mysql:3306/testeopenshift";
+    public static final String URL = "jdbc:mysql://teste-mysql:3306/testeopenshift";
     public static final String USER = "root";
-    public static final String PASSWORD = "";
+    public static final String PASSWORD = "root";
     public static final String DRIVER_CLASS = "org.gjt.mm.mysql.Driver"; 
     
     //construtor privado - padrão singleton - garantir unica instancia para todo o aplicativo
