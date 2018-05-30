@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.12, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: testeopenshift
+-- Host: 127.0.0.1    Database: teste-openshift-bd-mysql
 -- ------------------------------------------------------
 -- Server version	5.5.5-10.1.19-MariaDB
 
@@ -25,7 +25,7 @@ DROP TABLE IF EXISTS `teste`;
 CREATE TABLE `teste` (
   `tesCodigo` int(11) NOT NULL AUTO_INCREMENT,
   `tesNome` varchar(50) DEFAULT NULL,
-  `tesValor` varchar(50) DEFAULT NULL,
+  `tesValor` int(11) DEFAULT NULL,
   PRIMARY KEY (`tesCodigo`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -36,16 +36,16 @@ CREATE TABLE `teste` (
 
 LOCK TABLES `teste` WRITE;
 /*!40000 ALTER TABLE `teste` DISABLE KEYS */;
-INSERT INTO `teste` VALUES (1,'t1','t1'),(2,'t2','t2'),(3,'t3','t3');
+INSERT INTO `teste` VALUES (1,'t1',1),(2,'t2',2),(3,'t3',3);
 /*!40000 ALTER TABLE `teste` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Dumping events for database 'testeopenshift'
+-- Dumping events for database 'teste-openshift-bd-mysql'
 --
 
 --
--- Dumping routines for database 'testeopenshift'
+-- Dumping routines for database 'teste-openshift-bd-mysql'
 --
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -57,4 +57,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-05-30 13:16:33
+-- Dump completed on 2018-05-30 13:53:09

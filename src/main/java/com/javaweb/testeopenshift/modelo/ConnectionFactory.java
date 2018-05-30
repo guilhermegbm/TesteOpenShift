@@ -19,7 +19,7 @@ public class ConnectionFactory {
     private static ConnectionFactory instance = new ConnectionFactory();
     
     //constante e static - para usar sempre a mesma referência
-    public static final String URL = "jdbc:mysql://teste-mysql:3306/testeopenshift";
+    public static final String URL = "jdbc:mysql://teste-openshift-bd:3306/teste-openshift-bd-mysql";
     public static final String USER = "root";
     public static final String PASSWORD = "root";
     public static final String DRIVER_CLASS = "org.gjt.mm.mysql.Driver"; 
